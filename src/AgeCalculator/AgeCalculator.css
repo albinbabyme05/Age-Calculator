@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #e0f7fa; /* Standard background color */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.age-calculator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.age-calculator-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.age-calculator-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+  color: #4b29f5;
+}
+
+.age-calculator-box input {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Add gap between buttons */
+}
+
+.age-calculator-box button {
+  padding: 10px 20px;
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.age-calculator-box button:hover {
+  background: #feb47b;
+}
+
+.reset-button {
+  background: #ccc;
+}
+
+.reset-button:hover {
+  background: #bbb;
+}
+
+.age-result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #7550fe;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.age-result:hover {
+  background-color: #feb47b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
